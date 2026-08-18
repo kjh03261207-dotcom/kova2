@@ -12,9 +12,12 @@
     }
     /* 댓글 영역 테두리와 여백 설정 */
     .comment-area {
-      margin-top: 30px;
-      padding-top: 20px;
-      border-top: 1px solid #eee;
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 2px solid #ccc;
+      min-height: 300px; /* 댓글창 공간 강제 확보 */
+      position: relative;
+      clear: both;
     }
   </style>
 </head>
@@ -38,19 +41,16 @@
 
 -. 코바의 주체는 미래세대이며 현세대의 보상이다.
 
--. 코바의 가치는 회원이 계속 만들어 가는 것이다.
-
--. 모든 정책은 회원의 다수결 원칙으로 결정된다.
-
 -. 코바는 가상화폐가 아니라 가상자산이다.
     </pre>
     </h3>
   "></iframe>
 
-  <!-- 💬 댓글이 표시되는 영역 -->
-  <div class="comment-area">
+    <!-- 💬 댓글이 표시되는 영역 -->
+  <div class="comment-area" id="utterances-box">
+    <!-- ⚠️ src 주소에 /client.js를 추가했고, 일반적인 연동 방식인 issue-term으로 변경했습니다. -->
     <script src="https://utteranc.es"
-            repo="kjh03261207-dotcom/-"
+            repo="kjh03261207-dotcom/kjh03261207-dotcom.github.io"
             issue-term="pathname"
             theme="github-light"
             crossorigin="anonymous"
@@ -58,8 +58,5 @@
     </script>
   </div>
 
-  <audio autoplay="autoplay" loop="loop" controls="controls"> 
-    <source src="ivy.mp3">
-  </audio>
 </body>
 </html>

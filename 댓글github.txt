@@ -1,0 +1,8 @@
+<!-- 예시: index.html 맨 아래쪽 모양 -->
+<script src="https://utteranc.es"
+        repo="kjh03261207-dotcom/kjh03261207-dotcom.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
